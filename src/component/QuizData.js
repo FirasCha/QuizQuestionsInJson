@@ -9,6 +9,30 @@ const questions = [
         ],
     },
     {
-
+        questionText : "Who's CEO of Tesla?",
+        answerOption : [
+            {answerText : "Jeff", isCorrect : false},
+            {answerText : "Elon Mask", isCorrect : true},
+            {answerText : "Bill Gates", isCorrect : false},
+            {answerText : "Tony Stark", isCorrect : false},
+        ],
+    },
+    {
+        questionText : "Name of the largest planet?",
+        answerOption : [
+            {answerText : "earth", isCorrect : false},
+            {answerText : "Pluto", isCorrect : false},
+            {answerText : "Jupter", isCorrect : true},
+            {answerText : "Uranus", isCorrect : false},
+        ],
+    },
+    {
+        questionText : "Who's CEO of Twitter?",
+        answerOption : [
+            {answerText : "Elon Mask", isCorrect : true},
+            {answerText : "Jeff", isCorrect : false},
+            {answerText : "Bill Gates", isCorrect : false},
+            {answerText : "Tony Stark", isCorrect : false},
+        ],
     }
 ]
