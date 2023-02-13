@@ -31,3 +31,11 @@ body{
 .question-count{
     margin-bottom: 20px;
 }
+
+.question-count span{
+    font-size: 28px;
+}
+
+.question-text{
+    margin-bottom: 12px;
+}
