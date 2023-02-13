@@ -22,3 +22,8 @@ body{
 .score-section{
     text-align: center;
 }
+
+.question-section{
+    width: 100%;
+    position: relative;
+}
