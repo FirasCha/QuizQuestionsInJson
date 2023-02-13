@@ -8,7 +8,7 @@ body{
 }
 
 .app{
-    background-color: #252d4d;
+    background-color: #252d4a;
     width: 500px;
     min-height: 250px;
     height: min-content;
@@ -38,4 +38,25 @@ body{
 
 .question-text{
     margin-bottom: 12px;
+}
+/*Right Answer*/
+.answer-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button{
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252d4a;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #234668;
+    cursor: pointer;
 }
