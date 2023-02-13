@@ -27,3 +27,7 @@ body{
     width: 100%;
     position: relative;
 }
+
+.question-count{
+    margin-bottom: 20px;
+}
