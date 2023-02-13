@@ -34,5 +34,7 @@ const questions = [
             {answerText : "Bill Gates", isCorrect : false},
             {answerText : "Tony Stark", isCorrect : false},
         ],
-    }
-]
+    },
+];
+
+export default questions;
