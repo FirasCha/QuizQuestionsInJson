@@ -13,6 +13,7 @@ const MenuOfQuiz = () => {
                         <h5 style={{textAlign:'center'}}>Menu Quiz</h5>
                         <Link className="link" to="/Quiz" >Kids Quiz</Link>
                         <Link className="link" to="/HistoricalQuiz" >Historical Quiz</Link>
+                        <Link className="link" to="/FootballQuiz" >Football Quiz</Link>
                         {/* <Link className="link" to="/Quiz" >Kids Quiz</Link>
                         <Link className="link" to="/Quiz" >Kids Quiz</Link>
                         <Link className="link" to="/Quiz" >Kids Quiz</Link> */}
