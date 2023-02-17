@@ -73,7 +73,7 @@ const Quiz = () => {
                             )
                         })}
                         <div className='actions'>
-                            {/* <button onClick={handlePlayAgain}>Quit</button> */}
+                            <button onClick={handlePlayAgain}>Quit</button>
                             {/* <button onClick={handlePrevOptions}>Previous</button> */}
                             <button disabled={!clicked} onClick={handleNextOptions}>Next</button>
                         </div>

@@ -1,4 +1,5 @@
 const questions = [
+    //KIDS QUIZ
     {
         questionText : "How many days are they in the week?",
         answerOption : [

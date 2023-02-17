@@ -1,12 +1,20 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import HistoricalQuiz from './component/HistoricalQuiz';
+import MenuOfQuiz from './component/MenuOfQuiz';
 import Quiz from './component/Quiz';
 
 function App() {
   return (
     <>
-    <Quiz/>
-    <HistoricalQuiz/>
+    <div>
+    <BrowserRouter>
+      <MenuOfQuiz/>
+      <Routes>
+        <Route path='/Quiz' element={<Quiz/>}></Route>
+      </Routes>
+    </BrowserRouter>
+    </div>
     </>  
   );
 }
