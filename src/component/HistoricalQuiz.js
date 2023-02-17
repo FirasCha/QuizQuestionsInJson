@@ -5,12 +5,13 @@ import QuizResult from './QuizResult'
 
 const HistoricalQuiz = () => {
 
-
- const [ currentQuestion, setCurrentQuestion] = useState(0)
+    const LengQuestions = historical_questions.length
+    const [ currentQuestion, setCurrentQuestion] = useState(0)
     const [ score, setScore] = useState(0)
     const [ CorrectAns, setCorrectAns] = useState(0)
     const [ showResult, setShowResult] = useState(false)
     const [ clicked, setClicked] = useState(false)
+    
     const handleNextOptions = ()=>{
         setClicked(false)
         const nextQuestion = currentQuestion+1
@@ -46,6 +47,8 @@ const HistoricalQuiz = () => {
                     score={score} 
                     CorrectAns={CorrectAns} 
                     handlePlayAgain={handlePlayAgain}
+                    LengQuestions={LengQuestions}
+
                 />
 
             ) : (

@@ -4,6 +4,8 @@ import questions from './QuizData'
 import QuizResult from './QuizResult'
 
 const Quiz = () => {
+
+    const LengQuestions = questions.length
     const [ currentQuestion, setCurrentQuestion] = useState(0)
     const [ score, setScore] = useState(0)
     const [ CorrectAns, setCorrectAns] = useState(0)
@@ -44,6 +46,7 @@ const Quiz = () => {
                     score={score} 
                     CorrectAns={CorrectAns} 
                     handlePlayAgain={handlePlayAgain}
+                    LengQuestions={LengQuestions}
                 />
 
             ) : (
