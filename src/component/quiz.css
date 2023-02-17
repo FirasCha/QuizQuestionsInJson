@@ -92,20 +92,21 @@ button svg{
 }
 
 .link {
-    width: 100%;
-    font-size: 16px;
+    width: 97%;
+    font-size: 18px;
     color: #ffffff;
     background-color: #252d4a;
-    border-radius: 15px;
+    border-radius: 20px;
     display: flex;
     padding: 5px;
     justify-content: flex-start;
     align-items: center;
     border: 5px solid #234668;
     cursor: pointer;
-    text-decoration: none;     
+    text-decoration: none;
+    justify-content: center;     
   }
   .link:hover {
-    background-color: #234668;
+    background-color: #7cc6fe;
     color: white;
   }

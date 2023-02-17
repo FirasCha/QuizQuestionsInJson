@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./quiz.css"
 import historical_questions from './HistoricDataQuiz'
 import QuizResult from './QuizResult'
+import { Link } from 'react-router-dom'
 
 const HistoricalQuiz = () => {
 
@@ -77,6 +78,7 @@ const HistoricalQuiz = () => {
                         <div className='actions'>
                             {/* <button onClick={handlePlayAgain}>Quit</button> */}
                             {/* <button onClick={handlePrevOptions}>Previous</button> */}
+                            <Link className="link" to="/" >Menu</Link>
                             <button disabled={!clicked} onClick={handleNextOptions}>Next</button>
                         </div>
                     </div>

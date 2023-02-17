@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import "./quiz.css"
 import questions from './QuizData'
 import QuizResult from './QuizResult'
@@ -73,7 +74,8 @@ const Quiz = () => {
                             )
                         })}
                         <div className='actions'>
-                            <button onClick={handlePlayAgain}>Quit</button>
+                            <Link className="link" to="/" >Menu</Link>
+                            <button onClick={handlePlayAgain}>Restart</button>
                             {/* <button onClick={handlePrevOptions}>Previous</button> */}
                             <button disabled={!clicked} onClick={handleNextOptions}>Next</button>
                         </div>

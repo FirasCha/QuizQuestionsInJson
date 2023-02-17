@@ -27,15 +27,7 @@ const questions = [
             {answerText : "Uranus", isCorrect : false},
         ],
     },
-    {
-        questionText : "Who's CEO of Twitter?",
-        answerOption : [
-            {answerText : "Elon Mask", isCorrect : true},
-            {answerText : "Jeff", isCorrect : false},
-            {answerText : "Bill Gates", isCorrect : false},
-            {answerText : "Tony Stark", isCorrect : false},
-        ],
-    },
+    
 ];
 
 export default questions;
