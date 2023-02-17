@@ -78,7 +78,7 @@ const HistoricalQuiz = () => {
                         <div className='actions'>
                             {/* <button onClick={handlePlayAgain}>Quit</button> */}
                             {/* <button onClick={handlePrevOptions}>Previous</button> */}
-                            <Link className="link" to="/" >Menu</Link>
+                            <Link className="link" to="/">Menu</Link>
                             <button disabled={!clicked} onClick={handleNextOptions}>Next</button>
                         </div>
                     </div>
