@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./quiz.css"
 import questions from './QuizData'
 import QuizResult from './QuizResult'
+
 const Quiz = () => {
     const [ currentQuestion, setCurrentQuestion] = useState(0)
     const [ score, setScore] = useState(0)
@@ -69,7 +70,7 @@ const Quiz = () => {
                             )
                         })}
                         <div className='actions'>
-                            <button onClick={handlePlayAgain}>Quit</button>
+                            {/* <button onClick={handlePlayAgain}>Quit</button> */}
                             {/* <button onClick={handlePrevOptions}>Previous</button> */}
                             <button disabled={!clicked} onClick={handleNextOptions}>Next</button>
                         </div>
