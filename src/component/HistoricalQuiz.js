@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./quiz.css"
-import questions from './HistoricDataQuiz'
+import historical_questions from './HistoricDataQuiz'
 import QuizResult from './QuizResult'
 
 const HistoricalQuiz = () => {
@@ -14,7 +14,7 @@ const HistoricalQuiz = () => {
     const handleNextOptions = ()=>{
         setClicked(false)
         const nextQuestion = currentQuestion+1
-        if(nextQuestion < questions.length){
+        if(nextQuestion < historical_questions.length){
             setCurrentQuestion(nextQuestion)
         }else{
             setShowResult(true)
@@ -53,14 +53,14 @@ const HistoricalQuiz = () => {
                 <div className='question-section'>
                         <h5> Score : {score}</h5>
                         <div className='question-count'>
-                            <span>Question {currentQuestion+1} of {questions.length}</span>
+                            <span>Question {currentQuestion+1} of {historical_questions.length}</span>
                         </div>
                         <div className='question-text'>
-                            {questions[currentQuestion].questionText}
+                            {historical_questions[currentQuestion].questionText}
                         </div>
                     </div>
                     <div className='answer-section'>
-                        {questions[currentQuestion].answerOption.map((ans, i) => {
+                        {historical_questions[currentQuestion].answerOption.map((ans, i) => {
                             return (
                             <button className={`button ${clicked & ans.isCorrect? "correct":"button"}`}
                             disabled={clicked}
