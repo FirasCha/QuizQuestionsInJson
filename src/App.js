@@ -12,6 +12,7 @@ function App() {
       <MenuOfQuiz/>
       <Routes>
         <Route path='/Quiz' element={<Quiz/>}></Route>
+        <Route path='/HistoricalQuiz' element={<HistoricalQuiz/>}></Route>
       </Routes>
     </BrowserRouter>
     </div>
