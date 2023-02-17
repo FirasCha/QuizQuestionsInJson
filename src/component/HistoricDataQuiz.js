@@ -17,7 +17,9 @@ const historical_questions = [
             {answerText : "1911", isCorrect : false},
         ],
     },
-    
+    //n which year was John F. Kennedy assassinated? Answer: 1963
+    //Where is the first Summer Olympics held? Answer: Athens, Greece 1896
+    //Who explored New World? Christopher Columbus.
 ];
 
 export default historical_questions;
