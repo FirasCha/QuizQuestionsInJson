@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./quiz.css"
 import geo_questions from './GeographyDataQuiz'
 import QuizResult from './QuizResult'

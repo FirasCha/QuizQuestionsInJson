@@ -14,7 +14,7 @@ const MenuOfQuiz = () => {
                         <Link className="link" to="/Quiz" >Kids Quiz</Link>
                         <Link className="link" to="/HistoricalQuiz" >Historical Quiz</Link>
                         <Link className="link" to="/FootballQuiz" >Football Quiz</Link>
-                        <Link className="link" to="/GeographyQuiz" >Football Quiz</Link>
+                        <Link className="link" to="/GeographyQuiz" >Geography Quiz</Link>
                         {/* <Link className="link" to="/Quiz" >Kids Quiz</Link>
                         <Link className="link" to="/Quiz" >Kids Quiz</Link>
                         <Link className="link" to="/Quiz" >Kids Quiz</Link> */}
