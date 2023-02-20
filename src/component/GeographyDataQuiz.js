@@ -117,6 +117,107 @@ const geography_questions = [
     Answer: The United States of America
     */
    //Hard questions
+   /**
+    * Trivia Question: Where are the Spanish Steps located?
+
+    Answer: Rome, Italy
+
+    Trivia Question: How many countries are there in the United Kingdom?
+
+    Answer: 4
+
+    Trivia Question: What is the capital of Senegal?
+
+    Answer: Dakar
+
+    Trivia Question: How many time zones does Russia have?
+
+    Answer: 11
+
+    Trivia Question: What is the name of the tallest mountain in Canada?
+
+    Answer: Mount Logan
+
+    Trivia Question: What country does the Rhine River run through?
+
+    Answer: Germany
+
+    Trivia Question: What two countries border directly north of Hungary?
+
+    Answer: Slovakia and Ukraine
+
+    Trivia Question: What is the name of the largest city in Australia?
+
+    Answer: Brisbane
+
+    Trivia Question: What is the name of the second tallest mountain in the world?
+
+    Answer: K2
+
+    Trivia Question: What Cape sits at the tip of Africa?
+
+    Answer: Cape of Good Hope
+
+    Trivia Question: What type of leaf is on the Canadian flag?
+
+    Answer: Maple
+
+    Trivia Question: What is the capital of Nova Scotia?
+
+    Answer: Halifax
+
+    Trivia Question: What country first used tinsel as a holiday tree decoration?
+
+    Answer: German
+
+    Trivia Question: What is the name of the only tropical rainforest in the United States?
+
+    Answer: Puerto Rico’s El Yunque National Forest
+
+    Trivia Question: What season does Australia experience in December?
+
+    Answer: Summer
+
+    Trivia Question: What is the name of the driest continent on Earth?
+
+    Answer: Antarctica
+
+    Trivia Question: Peking Duck is the national dish of what country?
+
+    Answer: China
+
+    Trivia Question: In which European city was the first organized marathon held?
+
+    Answer: Athens
+
+    Trivia Question: What country formerly ruled Iceland?
+
+    Answer: Denmark
+
+    Trivia Question: What is the name of the largest airport in the United States of America?
+
+    Answer: Denver International Airport
+
+    Trivia Question: Which continent is Cambodia located in?
+
+    Answer: Asia
+
+    Trivia Question: What country is known to have the best quality tap water?
+
+    Answer: Switzerland
+
+    Trivia Question: In what ocean is the Bermuda Triangle located?
+
+    Answer: Atlantic Ocean
+
+    Trivia Question: What city is known as the Glass Capital of the World?
+
+    Answer: Toledo
+
+    Trivia Question: How many stars are on the Australian flag?
+
+    Answer: 6
+    */
 ];
 
 export default geography_questions;
