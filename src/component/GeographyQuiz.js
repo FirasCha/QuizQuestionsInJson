@@ -1,8 +1,86 @@
 import React from 'react'
+import "./quiz.css"
+import geo_questions from './GeographyDataQuiz'
+import QuizResult from './QuizResult'
+import { Link } from 'react-router-dom'
 
 const GeographyQuiz = () => {
+    const LengQuestions = geo_questions.length
+    const [ currentQuestion, setCurrentQuestion] = useState(0)
+    const [ score, setScore] = useState(0)
+    const [ CorrectAns, setCorrectAns] = useState(0)
+    const [ showResult, setShowResult] = useState(false)
+    const [ clicked, setClicked] = useState(false)
+    
+    const handleNextOptions = ()=>{
+        setClicked(false)
+        const nextQuestion = currentQuestion+1
+        if(nextQuestion < geo_questions.length){
+            setCurrentQuestion(nextQuestion)
+        }else{
+            setShowResult(true)
+        }    
+    }
+    const handleAnswerOption = (isCorrect)=>{
+        if(isCorrect){
+            setScore(score+5)
+            setCorrectAns(CorrectAns+1)
+        }
+        setClicked(true)
+    }
+    const handlePlayAgain= ()=>{
+        setCurrentQuestion(0)
+        setScore(0)
+        setCorrectAns(0)
+        setShowResult(false)
+    }
   return (
-    <div>GeographyQuiz</div>
+    <>
+        <div className='app'>
+            {showResult?(
+
+                <QuizResult 
+                    score={score} 
+                    CorrectAns={CorrectAns} 
+                    handlePlayAgain={handlePlayAgain}
+                    LengQuestions={LengQuestions}
+
+                />
+
+            ) : (
+                <>
+                <div className='question-section'>
+                        <h5> Score : {score}</h5>
+                        <div className='question-count'>
+                            <span>Question {currentQuestion+1} of {geo_questions.length}</span>
+                        </div>
+                        <div className='question-text'>
+                            {geo_questions[currentQuestion].questionText}
+                        </div>
+                    </div>
+                    <div className='answer-section'>
+                        {geo_questions[currentQuestion].answerOption.map((ans, i) => {
+                            return (
+                            <button className={`button ${clicked & ans.isCorrect? "correct":"button"}`}
+                            disabled={clicked}
+                            key={i} 
+                            onClick={()=>handleAnswerOption(ans.isCorrect)}
+                            >
+                                {ans.answerText}
+                            </button>
+                            )
+                        })}
+                        <div className='actions'>
+                            {/* <button onClick={handlePlayAgain}>Quit</button> */}
+                            {/* <button onClick={handlePrevOptions}>Previous</button> */}
+                            <Link className="link" to="/">Menu</Link>
+                            <button disabled={!clicked} onClick={handleNextOptions}>Next</button>
+                        </div>
+                    </div>
+                </>
+                )}    
+        </div>
+    </>
   )
 }
 
