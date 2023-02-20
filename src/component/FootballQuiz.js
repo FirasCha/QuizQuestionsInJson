@@ -29,10 +29,6 @@ const FootballQuiz = () => {
         }
         setClicked(true)
     }
-    const handlePrevOptions = ()=>{
-        const prevQuestion = currentQuestion-1
-        setCurrentQuestion(prevQuestion)
-    }
     const handlePlayAgain= ()=>{
         setCurrentQuestion(0)
         setScore(0)

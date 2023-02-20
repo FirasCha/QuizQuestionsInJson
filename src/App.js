@@ -9,10 +9,9 @@ function App() {
   return (
     <>
     <div>
-    <BrowserRouter>
-      
+    <BrowserRouter>    
       <Routes>
-      <Route path='/' element={<MenuOfQuiz/>}></Route>
+        <Route path='/' element={<MenuOfQuiz/>}></Route>
         <Route path='/Quiz' element={<Quiz/>}></Route>
         <Route path='/HistoricalQuiz' element={<HistoricalQuiz/>}></Route>
         <Route path='/FootballQuiz' element={<FootballQuiz/>}></Route>
