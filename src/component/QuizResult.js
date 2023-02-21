@@ -7,7 +7,7 @@ const QuizResult = (props) => {
     setLoading(true)
     setTimeout(()=>{
       setLoading(false)
-    },5000)
+    },2500)
   },[])
   return (
     <div className='score-question'>
@@ -17,7 +17,7 @@ const QuizResult = (props) => {
         speedMultiplier={1}
         color={'#7cc6fe'}
         loading={loading}
-        size={60}
+        size={40}
         aria-label="Loading Spinner"
         data-testid="loader"
       />

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import "./quiz.css"
 import questions from './QuizData'
 import QuizResult from './QuizResult'
+import { PacmanLoader } from 'react-spinners'
 import { SlControlForward } from "react-icons/sl";
 import { VscDebugRestart } from "react-icons/vsc";
 
@@ -42,17 +43,28 @@ const Quiz = () => {
     }
 
 
-//     const [loading, setLoading] = useState(false)
-//   useEffect(()=>{
-//     setLoading(true)
-//     setTimeout(()=>{
-//       setLoading(false)
-//     },5000)
-//   },[])
+    const [loading, setLoading] = useState(false)
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+      setLoading(false)
+    },4000)
+  },[])
   return (
     <>
         <div className='app'>
-            {showResult?(
+            {
+              loading?
+              <PacmanLoader
+              speedMultiplier={1}
+              color={'#7cc6fe'}
+              loading={loading}
+              size={120}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+            :  
+            (showResult?(
 
                 <QuizResult 
                     score={score} 
@@ -92,7 +104,7 @@ const Quiz = () => {
                         </div>
                     </div>
                 </>
-                )}    
+                ))}    
                 
         </div>
     </>
