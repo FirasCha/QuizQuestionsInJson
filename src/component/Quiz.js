@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import "./quiz.css"
 import questions from './QuizData'
 import QuizResult from './QuizResult'
+import { SlControlForward } from "react-icons/sl";
+import { VscDebugRestart } from "react-icons/vsc";
 
 const Quiz = () => {
 
@@ -75,9 +77,9 @@ const Quiz = () => {
                         })}
                         <div className='actions'>
                             <Link className="link" to="/" >Menu</Link>
-                            <button onClick={handlePlayAgain}>Restart</button>
+                            <button onClick={handlePlayAgain}><VscDebugRestart/></button>
                             {/* <button onClick={handlePrevOptions}>Previous</button> */}
-                            <button disabled={!clicked} onClick={handleNextOptions}>Next</button>
+                            <button disabled={!clicked} onClick={handleNextOptions}><SlControlForward/></button>
                         </div>
                     </div>
                 </>
