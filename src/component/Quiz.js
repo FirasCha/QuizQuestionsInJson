@@ -44,12 +44,12 @@ const Quiz = () => {
 
 
     const [loading, setLoading] = useState(false)
-  useEffect(()=>{
-    setLoading(true)
-    setTimeout(()=>{
-      setLoading(false)
+        useEffect(()=>{
+        setLoading(true)
+        setTimeout(()=>{
+        setLoading(false)
     },4000)
-  },[])
+    },[])
   return (
     <>
         <div className='app'>
@@ -59,7 +59,7 @@ const Quiz = () => {
               speedMultiplier={1}
               color={'#7cc6fe'}
               loading={loading}
-              size={120}
+              size={50}
               aria-label="Loading Spinner"
               data-testid="loader"
             />

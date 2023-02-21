@@ -3,9 +3,9 @@ import { BeatLoader } from 'react-spinners'
 
 const QuizResult = (props) => {
   const [loading, setLoading] = useState(false)
-  useEffect(()=>{
-    setLoading(true)
-    setTimeout(()=>{
+      useEffect(()=>{
+      setLoading(true)
+      setTimeout(()=>{
       setLoading(false)
     },2500)
   },[])

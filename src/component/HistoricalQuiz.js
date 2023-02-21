@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./quiz.css"
 import historical_questions from './HistoricDataQuiz'
 import QuizResult from './QuizResult'
 import { Link } from 'react-router-dom'
+import ClockLoader from 'react-spinners/ClockLoader'
 
 const HistoricalQuiz = () => {
 
@@ -35,10 +36,29 @@ const HistoricalQuiz = () => {
         setCorrectAns(0)
         setShowResult(false)
     }
+    const [loading, setLoading] = useState(false)
+        useEffect(()=>{
+        setLoading(true)
+        setTimeout(()=>{
+        setLoading(false)
+    },4000)
+    },[])
   return (
     <>
         <div className='app'>
-            {showResult?(
+            {
+                loading?
+                <ClockLoader
+                speedMultiplier={1}
+                color={'#7cc6fe'}
+                loading={loading}
+                size={250}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            :
+            (
+                showResult?(
 
                 <QuizResult 
                     score={score} 
@@ -82,7 +102,7 @@ const HistoricalQuiz = () => {
                         </div>
                     </div>
                 </>
-                )}    
+                ))}    
         </div>
     </>
   )
