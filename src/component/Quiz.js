@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect  } from 'react'
 import { Link } from 'react-router-dom'
 import "./quiz.css"
 import questions from './QuizData'
@@ -40,6 +40,15 @@ const Quiz = () => {
         setCorrectAns(0)
         setShowResult(false)
     }
+
+
+//     const [loading, setLoading] = useState(false)
+//   useEffect(()=>{
+//     setLoading(true)
+//     setTimeout(()=>{
+//       setLoading(false)
+//     },5000)
+//   },[])
   return (
     <>
         <div className='app'>
@@ -84,6 +93,7 @@ const Quiz = () => {
                     </div>
                 </>
                 )}    
+                
         </div>
     </>
   )
