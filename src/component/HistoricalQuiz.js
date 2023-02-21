@@ -58,6 +58,9 @@ const HistoricalQuiz = () => {
                         <div className='question-text'>
                             {historical_questions[currentQuestion].questionText}
                         </div>
+                        <div className='question-text'>
+                            
+                        </div>
                     </div>
                     <div className='answer-section'>
                         {historical_questions[currentQuestion].answerOption.map((ans, i) => {
